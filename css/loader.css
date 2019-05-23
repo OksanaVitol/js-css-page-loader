@@ -1,0 +1,69 @@
+.icon-load {
+    position: fixed;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #ebe9ee;
+    text-align: center;
+}
+.icon-load__container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.icon-load__loader {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-image: url("../img/Blocks.svg");
+    margin: 2px auto;
+}
+/* svg for ios*/
+.icon-load svg {
+       height: 1%
+   }
+
+.icon-load__animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+/* fadeOut effect */
+@-webkit-keyframes fadeOut {
+    from {
+        visibility: visible;
+        z-index: 99999;
+        opacity: 1;
+    }
+
+    to {
+        visibility: hidden;
+        z-index: -1;
+        opacity: 0;
+    }
+}
+@keyframes fadeOut {
+    from {
+        display: block;
+        z-index: 99999;
+        opacity: 1;
+    }
+
+    to {
+        display: none;
+        z-index: -1;
+        opacity: 0;
+    }
+}
+.icon-load__fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
