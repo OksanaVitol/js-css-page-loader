@@ -1,19 +1,8 @@
 # loader
 Display a loading icon until the page loads completely(check min time)
 
-Simple loader. Provided by Oksana Vitol
+Simple loader. Provided by Oksana Korobanova
 ----------------------------------------
-File structure:
-loader
-    css
-      loader.css
-    img
-      Blocks.svg
-    js
-      loader.js
-    loader.html
-    readme.txt
------------------------------------------
    Steps to make it work:
    1. Copy the entire folder 'loader' to your project root directory
 
